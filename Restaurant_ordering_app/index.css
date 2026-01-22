@@ -1,0 +1,265 @@
+html {
+    width: 600px;
+}
+
+body {
+    margin: 0;
+    width: 600;
+    margin: 50px;
+    border: 3px solid black;
+    font-family: Smythe;
+    position:relative;
+} 
+
+h1, h3, p {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-image: url('header_img.jpg');
+    width: 600;
+    height: 167;
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section {
+    padding: 30px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.main-header {
+    font-family: Smythe;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 39px;
+    color: white;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.subheader {
+    font-family: Smythe;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22.42px;
+    color: white;
+    line-height: 13.8px;
+    letter-spacing: 0%;
+}
+.list {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.list-item {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.emoji{
+    font-size: 60px;
+}
+
+.dish-el {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dish-name {
+    font-family: Smythe;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 28px;
+    line-height: 16.8px;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+.remove-button {
+    font-family: Smythe;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #8B8B8B;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.dish-price {
+    font-family: Smythe;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+.add-to-cart {
+    border: 1.5px solid #DEDEDE;
+    background-color: white;
+    border-radius:50%;
+    height: 40px;
+    width: 40px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    font-size: 32px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9b9b9b;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    transform: scale(1.125);
+    font-size: 35px;
+}
+
+.menu-recap {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.menu-recap-header{
+    margin: 0 auto;
+}
+
+.order-list {
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 2px solid #393333;
+}
+
+.order-list-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.order-list-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.order-recap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.order-recap-header {
+    margin: 0;
+}
+
+.btn {
+    background: #16DB99;
+    color: white;
+    width: 100%;
+    height: 60;
+    border: none;
+    border-radius: 3px;
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    cursor: pointer;
+}
+
+.order-messsage-box{
+    width: 100%;
+    height: 120;
+    border-radius: 3px;
+    background: #ECFDF5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.message {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 16.8px;
+    color: #065F46;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:40px 20px 0;
+    background-color: white;
+    box-shadow: 5px 5px 30px #00000080;
+}
+
+.modal-header {
+    margin: 0 auto 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input{
+    padding: 15px;
+    border: 1.3px solid #757575;
+    border-radius: 3px;
+}
+
+.hidden {
+    display: none;
+}

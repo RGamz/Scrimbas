@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="hero">
+            <div class="hero-section">
+                <h1 class="main-header"> Jimmy’s Diner </h1>
+                <p class="subheader">The best burgers and pizzas in town.</p>
+            </div>
+
+        </header>
+        <main class="main"> 
+            <section class="menu">
+                <ul class="list" id="dishList">
+                </ul>
+            </section>
+            <section class="menu-recap" id="menuRecap">
+                <h2 class="menu-recap-header">Your order</h2>
+                <ul class="order-list" id="orderList">
+                </ul>
+                <div class="order-recap">
+                    <h2 class="order-recap-header">Total price:</h2>
+                    <p class="dish-price" id="totalPrice">$0</p>
+                </div>
+                <button class="btn" id="completeOrderBtn">Complete order</button>
+            </section>
+            <div class="order-messsage-box hidden" id="orderMessage">
+                <p class="message">Thanks, James! Your order is on its way!</p> 
+            </div>
+            <div class="modal hidden"id="modal">
+                <h2 class="modal-header">Enter card details</h2>
+                <form class="form">
+                    <input class="input" type="text" id="lname" name="lname" placeholder="Enter your name">
+                    <input class="input" type="number" id="cardNum" name="cardNum" placeholder="Enter card number">
+                    <input class="input" type="number" id="cvv" name="cvv" placeholder="Enter CVV">
+                    <button type="submit" value="Submit" class="btn" id="submitBtn">Submit</button>
+                </form>
+            </div>
+        </main>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
