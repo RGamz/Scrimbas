@@ -37,19 +37,11 @@ body {
     height: 42px;
 }
 
-.color-picker-border{
-    width: 60px;
-    background-color: #E5E5E5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .color-picker {
     height: 34px;
     width: 52px;
     border: 0.5px solid #313131;
-    background-color: red;
+    background-color: E5E5E5;
 }
 
 .color-scheme {
@@ -70,6 +62,7 @@ body {
     background-color: white;
     border: 1px solid #D1D5DB;
     border-radius: 4px;
+    cursor:pointer;
 }
 
 
