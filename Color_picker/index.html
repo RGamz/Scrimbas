@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,600,0,0&icon_names=keyboard_arrow_down" />
         <title>Color Picker V1</title>
     </head>
     <body>
@@ -15,16 +16,21 @@
 
             <input type="color" class="color-picker"></input>
 
-            <select class="color-scheme" id="color-scheme">
-                <option value="monochrome">Monochrome</option>
-                <option value="monochrome-dark">Monochrome-dark</option>
-                <option value="monochrome-light">Monochrome-light</option>
-                <option value="analogic">Analogic</option>
-                <option value="complement">Complement</option>
-                <option value="analogic-complement">Analogic-complement</option>
-                <option value="triad">Triad</option>
-                <option value="quad">Quad</option>
-            </select>
+            <div class="color-scheme" id="color-scheme">
+                <div class="color-scheme-default">
+                    <div class="monochrome">Monochrome</div>
+                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                </div>
+                <ul class="color-scheme-list">
+                    <li class="monochrome-dark">Monochrome-dark</li>
+                    <li class="monochrome-light">Monochrome-light</li>
+                    <li class="analogic">Analogic</li>
+                    <li class="complement">Complement</li>
+                    <li class="analogic-complement">Analogic-complement</li>
+                    <li class="triad">Triad</li>
+                    <li class="quad">Quad</li>
+                </ul>
+            </div>
 
             <button class="get-color">Get color scheme</button>
 

@@ -6,7 +6,10 @@
     font-style: normal;
     line-height: 24px;
     letter-spacing: 0%;
+    box-sizing: border-box;
+    /* keep the rest of your font settings here... */
 }
+
 
 body {
     height: 70vh;
@@ -30,7 +33,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .color-scheme, .color-picker-border, .get-color{
@@ -38,10 +41,10 @@ body {
 }
 
 .color-picker {
-    height: 34px;
+    height: 42px;
     width: 52px;
     border: 0.5px solid #313131;
-    background-color: E5E5E5;
+    background-color: #E5E5E5;
 }
 
 .color-scheme {
@@ -113,16 +116,14 @@ body {
     text-align: center;
 }
 
-select,
-::picker(select) {
-  appearance: base-select;
+.color-scheme-list {
+    display:none;
 }
 
-select::picker-icon {
-  color: #999999;
-  transition: 0.4s rotate;
-}
-
-select:hover {
-    background-color: white;
+.color-scheme-default {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
