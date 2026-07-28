@@ -1,11 +1,4 @@
 * {
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 24px;
-    letter-spacing: 0%;
     box-sizing: border-box;
     /* keep the rest of your font settings here... */
 }
@@ -19,7 +12,13 @@ body {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0%;
 }
 
 .main {
@@ -55,6 +54,61 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position:relative;
+}
+
+.color-scheme-list {
+    display:none;
+    position: absolute;
+    padding: 0;
+    padding: 10px 0;
+    margin:0;
+    list-style: none;
+    background-color: white;
+    width: 100%;
+    top: 43px;
+    border: 1px solid #e9ecf0;
+    border-radius: 6px;
+    box-shadow: 0px 0px 0px 1px #0000000D, 0px 4px 6px -2px #0000000D, 0px 10px 15px -3px #0000001A;
+}
+
+.color-scheme-list li {
+    padding-left: 25px;
+    padding-bottom: 8px;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.active {
+    display: block;
+}
+
+.color-scheme-list .material-symbols-outlined {
+    display: none;
+}
+
+.color-scheme-default .material-symbols-outlined {
+    color: #616166;
+}
+
+.selected .material-symbols-outlined {
+    display: block;
+    color: #8c8c91;
+}
+
+.selected {
+    font-weight: 700;
+}
+
+.color-scheme-default {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .get-color{
@@ -116,14 +170,3 @@ body {
     text-align: center;
 }
 
-.color-scheme-list {
-    display:none;
-}
-
-.color-scheme-default {
-    padding: 0 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
