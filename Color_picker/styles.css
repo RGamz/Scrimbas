@@ -35,7 +35,7 @@ body {
     gap: 20px;
 }
 
-.color-scheme, .color-picker-border, .get-color{
+.color-scheme, .color-picker-border, .get-color-btn{
     height: 42px;
 }
 
@@ -111,7 +111,7 @@ body {
     width: 100%;
 }
 
-.get-color{
+.get-color-btn{
     width: 120px;
     font-size: 12px;
     line-height: 16px;
