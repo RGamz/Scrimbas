@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Watchlist</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="body">
     <div class="wrapper">
@@ -28,11 +31,41 @@
         
         <main class="main">
 
-            <div class="backgroundMain">
+            <!-- <div class="backgroundMain">
                 <img class="backgroundIcon" src="./Icon.png">
                 <div class="backgroundText">Start exploring</div>
-            </div>
+            </div> -->
+            <div class="backgroundMovies">
+                <div class="movieEl">
+                    
+                    <img class="movieElImg" id="movieElImg" src="./movieSample.png" >
 
+                    <div class="movieElBody">
+                        <div class="movieElHeader">
+                            <div class="movieElName" id="movieElName">Blade Runner</div>
+                            <div class="movieElRating">
+                                <img class="starIcon" src="./star.png">
+                                <div class="movieElNote" id="movieElNote">8.1</div>
+                            </div>
+                        </div>
+
+                        <div class="movieElSubHeader">
+                            <div class="movieElLength" id="movieElLength">117 min</div>
+                            <div class="movieElgenres" id="movieElgenres">Action, Drama, Sci-fi</div>
+                            <div class="movieElWatchlist">
+                                <img class="plusIcon" src="./plus.png">
+                                <div class="addToWatchlist" id="addToWatchlist">Watchlist</div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="movieElDescription" id="movieElDescription">
+                            A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their creator.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </main>
 
 
