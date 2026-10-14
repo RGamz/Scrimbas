@@ -188,3 +188,11 @@
     color: #6B7280;
 }
 
+.subHeaderLink {
+    text-decoration: none;
+}
+
+.movieElWatchlist:hover {
+    cursor: pointer;
+}
+

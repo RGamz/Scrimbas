@@ -1,7 +1,7 @@
 const searchBtn = document.getElementById("btnSearch")
 const searchBarText = document.getElementById("site-search")
 const mainDiv = document.getElementById("main")
-
+const searchForm = document.getElementById("form")
 
 async function getMovieData(searchText) {
 
@@ -21,7 +21,7 @@ async function getMovieData(searchText) {
 
     } else {
         console.log(result)
-        mainDiv.innerHTML += 
+        mainDiv.insertAdjacentHTML("beforeend", 
           `
             <div class="backgroundMovies">
               <div class="movieEl">
@@ -54,7 +54,18 @@ async function getMovieData(searchText) {
               </div>
             </div>
           `
+        )
 
+          const movieCard = mainDiv.lastElementChild
+          const addToWatchlist = movieCard.querySelector(".addToWatchlist")
+          const plusIcon = movieCard.querySelector(".plusIcon")
+
+          addToWatchlist.addEventListener("click", ()=> {
+            localStorage.setItem(result.Title, result.Title)
+            console.log(localStorage.getItem(result.Title))
+            plusIcon.src = "./check.png";
+            addToWatchlist.textContent = "Added to watchlist!"
+          })
 
     }
     
@@ -64,8 +75,12 @@ async function getMovieData(searchText) {
 }
 
 searchBtn.addEventListener("click", function() {
-    const searchValue = searchBarText.value.trim().toLowerCase().replace(/\s+/g, "+");
+    const searchValue = searchBarText.value.trim().toLowerCase().replace(/\s+/g, "+")
     getMovieData(searchValue)
 })
 
-
+searchForm.addEventListener("submit", function(event) {
+  event.preventDefault()
+  const searchValue = searchBarText.value.trim().toLowerCase().replace(/\s+/g, "+")
+  getMovieData(searchValue)
+});
